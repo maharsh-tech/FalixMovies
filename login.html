@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="#"><img src="logo.png" alt="Logo" class="logo" /></a>
+    </div>
+    <div class="nav-right">
+      <input type="text" class="search-box" placeholder="Search here..." />
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- ✅ Sidebar Menu -->
+  <div id="hamburgerMenu" class="sidebar-menu">
+    <span class="close-icon" onclick="toggleMenu()">✕</span>
+    <a href="index.html" class="menu-button">🏠 Home</a>
+    <a href="#" class="menu-button">👤 Login/Register</a>
+  </div>
+
+  <!-- ✅ Login Box -->
+  <div class="login-container">
+    <button class="primary-btn">Sign in with Google</button>
+
+    <input type="text" placeholder="Username or Email" class="input-box">
+    <input type="password" placeholder="Password" class="input-box">
+
+    <div class="recaptcha">
+      <p>[ reCAPTCHA will appear here ]</p>
+    </div>
+
+    <div class="remember-me">
+      <input type="checkbox" checked>
+      <label>Remember Me</label>
+    </div>
+
+    <button class="primary-btn">Log In</button>
+  </div>
+
+  <!-- ✅ Hamburger Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("hamburgerMenu");
+      menu.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms and Conditions - Falix Movies</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#"><img src="logo.png" alt="Logo" /></a>
+    <div>
+      <input type="text" placeholder="Search here...">
+    </div>
+    <div>
+      <button onclick="toggleMenu()">☰</button>
+      <div id="menu" style="display: none;">
+        <a href="#">Login</a> |
+        <a href="#">Signup</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Terms Content -->
+  <section>
+    <h1>Terms and Conditions</h1>
+    <p>Welcome to Falix Movies. By accessing or using our website, you agree to be bound by the following terms and conditions.</p>
+
+    <h2>1. Use of Website</h2>
+    <p>You agree to use this website for lawful purposes only.</p>
+
+    <h2>2. Content Ownership</h2>
+    <p>All content, including movies, images, and descriptions, are for informational and entertainment purposes.</p>
+
+    <h2>3. Modifications</h2>
+    <p>We reserve the right to change or update these terms at any time.</p>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "none" ? "block" : "none";
+    }
+  </script>
+
+</body>
+</html>

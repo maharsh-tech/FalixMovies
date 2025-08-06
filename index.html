@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+  <!-- Left: Logo -->
+  <div class="nav-left">
+    <a href="#">
+      <img src="logo.png" alt="Logo" class="logo" />
+    </a>
+  </div>
+
+  <!-- Right: Search + Hamburger -->
+  <div class="nav-right">
+    <input type="text" class="search-box" placeholder="Search here..." />
+    <div class="menu-icon-container">
+      <!-- Hamburger Icon -->
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </div>
+</header>
+
+<!-- ✅ Move sidebar menu OUTSIDE the header -->
+<div id="hamburgerMenu" class="sidebar-menu">
+  <span class="close-icon" onclick="toggleMenu()">✕</span>
+  <a href="login.html" class="menu-button">👤 Login/Register</a>
+</div>
+
+
+
+<main class="movie-section">
+  <div class="movie-grid">
+
+    <!-- Card 1 -->
+    <div class="movie-card">
+      <img src="https://olamovies.cam/wp-content/uploads/2025/07/Good-Boy-2025-Google-Drive-Download.jpg" alt="Good Boy">
+      <div class="movie-details">
+        <h3>Good Boy (2025) Season 1 S01 720p + 1080p</h3>
+        <p class="meta">🕒 59 minutes ago &nbsp; 👁 200 views</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="movie-card">
+      <img src="https://olamovies.cam/wp-content/uploads/2025/07/Catalog-2025-Google-Drive-Download.jpg" alt="Catalog">
+      <div class="movie-details">
+        <h3>Catalog (2025) S01 720p + 1080p + 2160p 4K NF WEB-DL</h3>
+        <p class="meta">🕒 1 hour ago &nbsp; 👁 121 views</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="movie-card">
+      <img src="https://olamovies.cam/wp-content/uploads/2025/07/Trainwreck-The-Real-Project-X-2025-Google-Drive-Download.jpg" alt="Trainwreck">
+      <div class="movie-details">
+        <h3>Trainwreck: The Real Project X (2025) 720p + 2160p</h3>
+        <p class="meta">🕒 1 hour ago &nbsp; 👁 282 views</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("hamburgerMenu");
+    menu.classList.toggle("active");
+  }
+</script>
+
+
+</body>
+</html>

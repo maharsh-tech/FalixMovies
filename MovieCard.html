@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Detail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#"><img src="logo.png" alt="Logo" class="logo"></a>
+    <div>
+      <input type="text" placeholder="Search here..." class="search-box">
+      <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar-menu" id="sidebar">
+    <span class="close-icon" onclick="toggleSidebar()">✖</span>
+    <a href="index.html" class="menu-button">🏠 Home</a>
+  </div>
+
+  <!-- Hero Image -->
+  <section class="hero">
+    <img src="https://olamovies.cam/wp-content/uploads/2025/07/Trainwreck-The-Real-Project-X-2025-Google-Drive-Download.jpg" alt="Hero Image" class="hero-img gradient-overlay">
+  </section>
+
+  <main class="main-grid">
+    <!-- Movie Content -->
+    <div class="content">
+      <h1>Trainwreck: The Real Project X (2025)</h1>
+      <p class="release-date">4 days ago • 3.7K views</p>
+      <p class="summary">
+        <strong>Trainwreck: The Real Project X</strong> (2025) is the fifth entry in Netflix’s <em>Trainwreck</em> docuseries.
+        It revisits a real-life event from 2012 in Haren, Netherlands.
+      </p>
+
+      <div class="trailer">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+
+      <div class="downloads">
+        <h3>Download Links</h3>
+        <a href="#" class="download-btn">720p (800MB)</a>
+        <a href="#" class="download-btn">1080p (1.5GB)</a>
+        <a href="#" class="download-btn">2160p (3.2GB)</a>
+      </div>
+
+      <div class="knowledge-desk">
+        <h2>Knowledge Desk</h2>
+        <ul>
+          <li>Ensure your media player supports x265 codec.</li>
+          <li>Use a download manager for stable downloads.</li>
+          <li>If links are broken, report via Telegram.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Categories Sidebar -->
+    <aside class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Bollywood <span>(1002)</span></a></li>
+        <li><a href="#">Hollywood <span>(3043)</span></a></li>
+        <li><a href="#">TV Series <span>(1112)</span></a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="about">
+      <h2>About</h2>
+      <p>FalixMovies collects the highest quality movies and TV series...</p>
+      <a href="#">Telegram Channel</a><br>
+      <a href="#">FalixMovies.top</a><br>
+      <a href="#">FalixMovies.cam</a>
+    </div>
+    <div class="tags">
+      <h2>Tags</h2>
+      <div class="tag-list">
+        <span class="tag">Action</span>
+        <span class="tag">Drama</span>
+        <span class="tag">Hindi</span>
+        <span class="tag">1080p</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

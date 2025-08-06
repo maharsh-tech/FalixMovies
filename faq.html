@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - Falix Movies</title>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#"><img src="logo.png" alt="Logo" /></a>
+
+    <div>
+      <input type="text" placeholder="Search here..." />
+    </div>
+
+    <!-- Hamburger Menu for Login/Signup -->
+    <div>
+      <button onclick="toggleMenu()">☰</button>
+      <div id="menu" style="display: none;">
+        <a href="#">Login</a> |
+        <a href="#">Signup</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FAQ Section -->
+  <section>
+    <h1>Frequently Asked Questions</h1>
+
+    <div>
+      <h2>1. How do I download a movie?</h2>
+      <p>Click on your desired movie, scroll to the download section, and select your preferred quality link.</p>
+    </div>
+
+    <div>
+      <h2>2. Are the movies free to download?</h2>
+      <p>Yes, all the movies listed on Falix Movies are free to access and download.</p>
+    </div>
+
+    <div>
+      <h2>3. What should I do if a download link is broken?</h2>
+      <p>Please contact us via the support section or leave a comment on the movie page. We will fix it promptly.</p>
+    </div>
+
+    <div>
+      <h2>4. Can I request a movie or series?</h2>
+      <p>Yes, you can use the “Request” section on the homepage to submit your movie or series request.</p>
+    </div>
+
+    <div>
+      <h2>5. What formats are the movies available in?</h2>
+      <p>Most movies are available in MP4 format with options like 480p, 720p, and 1080p depending on availability.</p>
+    </div>
+
+    <div>
+      <h2>6. Do I need an account to download?</h2>
+      <p>No account is needed. However, signing up allows you to comment, rate, and save favorites.</p>
+    </div>
+  </section>
+
+  <!-- Category Section -->
+  <section>
+    <h2>Categories</h2>
+    <ul>
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Comedy</a></li>
+      <li><a href="#">Drama</a></li>
+      <li><a href="#">Thriller</a></li>
+      <li><a href="#">Sci-Fi</a></li>
+      <li><a href="#">Romance</a></li>
+      <li><a href="#">Horror</a></li>
+      <li><a href="#">Documentary</a></li>
+    </ul>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "none" ? "block" : "none";
+    }
+  </script>
+
+</body>
+</html>

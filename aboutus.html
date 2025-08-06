@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Falix Movies</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html"><img src="logo.png" alt="Falix Movies Logo" height="40" /></a>
+    <div>
+      <input type="text" placeholder="Search here..." />
+      <button id="hamburger">☰</button>
+    </div>
+    <!-- Hamburger Menu -->
+    <div id="menu" style="display: none;">
+      <a href="index.html">Home</a><br />
+      <a href="watch-later.html">Watch Later</a><br />
+      <a href="faq.html">FAQ</a><br />
+      <a href="login.html">Login / Signup</a><br />
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </nav>
+
+  <!-- About Us Content -->
+  <main>
+    <h1>About Us</h1>
+    <p>
+      Welcome to <strong>Falix Movies</strong> – your go-to destination for high-quality, latest movies, web series, and entertainment content. We are passionate about bringing your favorite titles to your screen in the simplest and fastest way.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to provide an effortless movie-watching experience, where you can easily browse, stream, and download movies without ads or clutter.
+    </p>
+
+    <h2>What We Offer</h2>
+    <ul>
+      <li>HD and Full HD movie streaming</li>
+      <li>Fast and secure downloads</li>
+      <li>Regular updates with the latest releases</li>
+      <li>User-friendly and mobile-optimized interface</li>
+    </ul>
+
+    <h2>Why Choose Us?</h2>
+    <p>
+      We care about your entertainment time. Falix Movies is designed to minimize your effort in searching and maximize your joy in watching.
+    </p>
+
+    <h2>Contact Us</h2>
+    <p>
+      Have questions, suggestions, or requests? Reach out to us anytime at:  
+      <a href="mailto:support@falixmovies.com">support@falixmovies.com</a>
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <hr />
+    <p>
+      <a href="terms-and-conditions.html">Terms & Conditions</a> |
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="feedback.html">Feedback</a> |
+      <a href="dmca.html">DMCA</a>
+    </p>
+    <p>&copy; 2025 Falix Movies. All rights reserved.</p>
+  </footer>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    });
+  </script>
+
+</body>
+</html>
