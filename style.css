@@ -236,6 +236,55 @@ nav input[type="text"] {
   color: #ccc;
 }
 
+/* Password Popbox */
+.password-popbox {
+  display: none;
+  background: #fff3cd;
+  color: #856404;
+  padding: 12px 20px 12px 20px;
+  border: 1.5px solid #ffeeba;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  position: relative;
+  z-index: 10;
+  word-break: break-word;
+  min-width: 220px;
+  max-width: 100%;
+  animation: popbox-fadein 0.2s;
+}
+
+.password-popbox .close-popbox {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: #856404;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+@keyframes popbox-fadein {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    max-width: 98vw;
+    padding: 16px 4vw;
+  }
+  .password-popbox {
+    font-size: 0.98em;
+    padding: 10px 8px 10px 12px;
+    min-width: 0;
+  }
+}
+
 /* Hero Image */
 .hero {
   width: 100%;

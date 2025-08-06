@@ -4,76 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - Falix Movies</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Navigation -->
   <nav>
-    <a href="index.html"><img src="logo.png" alt="Logo" height="40"></a>
+    <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
     <div>
-      <input type="text" placeholder="Search here...">
-      <button id="hamburger">☰</button>
-    </div>
-    <!-- Hamburger Menu -->
-    <div id="menu" style="display: none;">
-      <a href="index.html">Home</a><br>
-      <a href="watch-later.html">Watch Later</a><br>
-      <a href="faq.html">FAQ</a><br>
-      <a href="login.html">Login / Signup</a><br>
-      <a href="feedback.html">Feedback</a>
+      <input type="text" placeholder="Search here..." class="search-box">
+      <span class="menu-icon" onclick="toggleSidebar()">☰</span>
     </div>
   </nav>
 
-  <!-- Privacy Policy Content -->
-  <main>
-    <h1>Privacy Policy</h1>
+  <!-- Sidebar -->
+  <div class="sidebar-menu" id="sidebar">
+    <span class="close-icon" onclick="toggleSidebar()">✖</span>
+    <a href="index.html" class="menu-button">🏠 Home</a>
+    <a href="login.html" class="menu-button">👤 Login/Register</a>
+    <a href="watch-later.html" class="menu-button">⏰ Watch Later</a>
+    <a href="faq.html" class="menu-button">❓ FAQ</a>
+    <a href="feedback.html" class="menu-button">💬 Feedback</a>
+  </div>
 
-    <p>At Falix Movies, your privacy is important to us. This privacy policy outlines how we collect, use, and protect your personal information.</p>
-
-    <h2>Information Collection</h2>
-    <p>We may collect personal data like your name and email during signup, and usage data like IP address and browser information.</p>
-
-    <h2>Cookies</h2>
-    <p>We use cookies to improve your browsing experience. You can disable cookies in your browser settings.</p>
-
-    <h2>Third-Party Services</h2>
-    <p>We may use third-party services (like analytics or ads) which may collect information as per their own policies.</p>
-
-    <h2>Data Security</h2>
-    <p>We implement standard security measures to protect your data but cannot guarantee complete safety.</p>
-
-    <h2>Changes to Policy</h2>
-    <p>We reserve the right to update this policy at any time. Any changes will be posted here.</p>
-
-    <h2>Contact</h2>
-    <p>If you have questions about this policy, contact us at support@falixmovies.com.</p>
+  <main class="main-grid">
+    <div class="content">
+      <h1 style="margin-bottom: 18px; color: #4db2ff;">Privacy Policy</h1>
+      <p class="summary" style="margin-bottom: 22px; font-size: 1.1em; color: #d1d1d1;">
+        At <strong>Falix Movies</strong>, your privacy is important to us. This privacy policy outlines how we collect, use, and protect your personal information.
+      </p>
+      <h2 style="margin-top: 24px; color: #fff;">Information Collection</h2>
+      <ul style="margin-bottom: 18px; color: #ccc; line-height: 1.7;">
+        <li>We may collect personal data like your <strong>name</strong> and <strong>email</strong> during signup.</li>
+        <li>We may collect usage data like <strong>IP address</strong> and <strong>browser information</strong>.</li>
+      </ul>
+      <h2 style="margin-top: 24px; color: #fff;">Cookies</h2>
+      <p style="margin-bottom: 18px; color: #ccc;">We use cookies to improve your browsing experience. You can disable cookies in your browser settings.</p>
+      <h2 style="margin-top: 24px; color: #fff;">Third-Party Services</h2>
+      <p style="margin-bottom: 18px; color: #ccc;">We may use third-party services (like analytics or ads) which may collect information as per their own policies.</p>
+      <h2 style="margin-top: 24px; color: #fff;">Data Security</h2>
+      <p style="margin-bottom: 18px; color: #ccc;">We implement standard security measures to protect your data but cannot guarantee complete safety.</p>
+      <h2 style="margin-top: 24px; color: #fff;">Changes to Policy</h2>
+      <p style="margin-bottom: 18px; color: #ccc;">We reserve the right to update this policy at any time. Any changes will be posted here.</p>
+      <h2 style="margin-top: 24px; color: #fff;">Contact</h2>
+      <p style="margin-bottom: 8px; color: #ccc;">If you have questions about this policy, contact us at <a href="mailto:support@falixmovies.com" style="color:#4db2ff;">support@falixmovies.com</a>.</p>
+    </div>
+    <aside class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Bollywood <span>(1002)</span></a></li>
+        <li><a href="#">Hollywood <span>(3043)</span></a></li>
+        <li><a href="#">TV Series <span>(1112)</span></a></li>
+      </ul>
+    </aside>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <hr>
-    <p>
-      <a href="terms-and-conditions.html">Terms & Conditions</a> |
-      <a href="privacy-policy.html">Privacy Policy</a> |
-      <a href="feedback.html">Feedback</a> |
-      <a href="dmca.html">DMCA</a>
-    </p>
-    <p>&copy; 2025 Falix Movies. All rights reserved.</p>
+  <footer class="footer">
+    <div class="about">
+      <h2>About</h2>
+      <p>FalixMovies collects the highest quality movies and TV series for your entertainment. Join our Telegram for updates and support.</p>
+      <a href="#">Telegram Channel</a><br>
+      <a href="#">FalixMovies.top</a><br>
+      <a href="#">FalixMovies.cam</a>
+    </div>
+    <div class="tags">
+      <h2>Tags</h2>
+      <div class="tag-list">
+        <span class="tag">Privacy</span>
+        <span class="tag">Policy</span>
+        <span class="tag">Security</span>
+        <span class="tag">Cookies</span>
+      </div>
+    </div>
   </footer>
 
-  <!-- Hamburger Menu Script -->
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const menu = document.getElementById('menu');
-
-    hamburger.addEventListener('click', () => {
-      if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'block';
-      } else {
-        menu.style.display = 'none';
-      }
-    });
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
   </script>
-
 </body>
 </html>

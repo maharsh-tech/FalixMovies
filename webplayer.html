@@ -4,79 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Watch Spiderman: Beyond the Spider-Verse (2025)</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
+    <div>
+      <input type="text" placeholder="Search here..." class="search-box">
+      <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+    </div>
+  </nav>
 
-  <!-- Header -->
-  <header>
-    <a href="index.html"><img src="logo.png" alt="Site Logo" width="120"></a>
-    <input type="text" placeholder="Search for movies...">
+  <!-- Sidebar -->
+  <div class="sidebar-menu" id="sidebar">
+    <span class="close-icon" onclick="toggleSidebar()">✖</span>
+    <a href="index.html" class="menu-button">🏠 Home</a>
+    <a href="login.html" class="menu-button">👤 Login/Register</a>
+    <a href="watch-later.html" class="menu-button">⏰ Watch Later</a>
+  </div>
 
-    <!-- Hamburger Menu -->
-    <div class="hamburger-menu">
-      <button id="hamburger-button">☰</button>
-      <div id="hamburger-menu-items" style="display: none;">
-        <a href="login.html">Login/signup</a><br>
-        <a href="watch-later.html">Watch Later</a>
+  <!-- Hero Image -->
+  <section class="hero">
+    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/11/spider-man-beyond-the-spider-verse-miles-gwen.jpg" alt="Spiderman: Beyond the Spider-Verse" class="hero-img gradient-overlay">
+  </section>
+
+  <main class="main-grid">
+    <!-- Movie Content -->
+    <div class="content">
+      <h1>Spiderman: Beyond the Spider-Verse (2025)</h1>
+      <p class="release-date">Released: March 28, 2025 • Uploaded: July 20, 2025</p>
+      <p class="summary">
+        <strong>Spiderman: Beyond the Spider-Verse</strong> (2025) is an animated action-adventure film continuing the multiverse saga. Join Miles Morales and Gwen Stacy as they face new challenges across dimensions.
+      </p>
+      <p><strong>Genre:</strong> Animation, Action, Adventure</p>
+      <p><strong>Language:</strong> English</p>
+      <p><strong>Quality:</strong> 1080p, 720p, 480p</p>
+
+      <div class="trailer">
+        <iframe width="100%" height="340" src="https://short.icu/zHocPIBEk" frameborder="0" allowfullscreen></iframe>
+        <p><em>Watch the trailer before downloading</em></p>
+      </div>
+
+      <div class="downloads">
+        <h3>Download Links</h3>
+        <a href="download/spiderman-1080p.mkv" class="download-btn">1080p HD (1.8 GB)</a>
+        <a href="download/spiderman-720p.mkv" class="download-btn">720p HD (950 MB)</a>
+        <a href="download/spiderman-480p.mkv" class="download-btn">480p (500 MB)</a>
+      </div>
+
+      <div class="knowledge-desk">
+        <h2>Knowledge Desk</h2>
+        <ul>
+          <li>Ensure your media player supports x265 codec.</li>
+          <li>Use a download manager for stable downloads.</li>
+          <li>If links are broken, report via Telegram.</li>
+        </ul>
       </div>
     </div>
-  </header>
 
-  <!-- Movie Info -->
-  <section>
-    <h1>Spiderman: Beyond the Spider-Verse (2025)</h1>
-    <p><strong>Genre:</strong> Animation, Action, Adventure</p>
-    <p><strong>Language:</strong> English</p>
-    <p><strong>Quality:</strong> 1080p, 720p, 480p</p>
-    <p><strong>Release Date:</strong> March 28, 2025</p>
-    <p><strong>Uploaded On:</strong> July 20, 2025</p>
-  </section>
-
-  <!-- Video Player -->
-  <section>
-    <iframe width="640" height="360" src="https://short.icu/zHocPIBEk" frameborder="0" scrolling="0" allowfullscreen></iframe>
-    <p><em>Watch the trailer before downloading</em></p>
-  </section>
-
-  <!-- Download Links -->
-  <section>
-    <h2>Download Links</h2>
-    <ul>
-      <li><a href="download/spiderman-1080p.mkv">🔽 1080p HD (1.8 GB)</a></li>
-      <li><a href="download/spiderman-720p.mkv">🔽 720p HD (950 MB)</a></li>
-      <li><a href="download/spiderman-480p.mkv">🔽 480p (500 MB)</a></li>
-    </ul>
-  </section>
-
-  <!-- Tags or Categories -->
-  <section>
-    <h3>Categories:</h3>
-    <p>Animation, Marvel, Multiverse, Action, 2025</p>
-  </section>
+    <!-- Categories Sidebar -->
+    <aside class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Animation <span>(500)</span></a></li>
+        <li><a href="#">Marvel <span>(1200)</span></a></li>
+        <li><a href="#">Action <span>(2100)</span></a></li>
+        <li><a href="#">2025 <span>(30)</span></a></li>
+      </ul>
+    </aside>
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <hr>
-    <p>
-      <a href="terms-and-conditions.html">Terms & Conditions</a> |
-      <a href="privacy-policy.html">Privacy Policy</a> |
-      <a href="feedback.html">Feedback</a> |
-      <a href="dmca.html">DMCA</a>
-    </p>
-    <p>&copy; 2025 Falix Movies. All rights reserved.</p>
+  <footer class="footer">
+    <div class="about">
+      <h2>About</h2>
+      <p>FalixMovies collects the highest quality movies and TV series for your entertainment. Join our Telegram for updates and support.</p>
+      <a href="#">Telegram Channel</a><br>
+      <a href="#">FalixMovies.top</a><br>
+      <a href="#">FalixMovies.cam</a>
+    </div>
+    <div class="tags">
+      <h2>Tags</h2>
+      <div class="tag-list">
+        <span class="tag">Animation</span>
+        <span class="tag">Marvel</span>
+        <span class="tag">Multiverse</span>
+        <span class="tag">Action</span>
+        <span class="tag">2025</span>
+      </div>
+    </div>
   </footer>
 
-  <!-- Hamburger Toggle Script -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const button = document.getElementById("hamburger-button");
-      const menu = document.getElementById("hamburger-menu-items");
-
-      button.addEventListener("click", function() {
-        menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
-      });
-    });
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
   </script>
-
 </body>
 </html>

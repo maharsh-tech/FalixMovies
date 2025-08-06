@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+    </div>
+    <div class="nav-right">
+      <input type="text" class="search-box" placeholder="Search here..." />
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- ✅ Sidebar Menu -->
+  <div id="hamburgerMenu" class="sidebar-menu">
+    <span class="close-icon" onclick="toggleMenu()">✕</span>
+    <a href="index.html" class="menu-button">🏠 Home</a>
+    <a href="login.html" class="menu-button">👤 Login/Register</a>
+  </div>
+
+  <!-- ✅ Sign Up Box -->
+  <div class="login-container">
+    <button class="primary-btn">Sign up with Google</button>
+
+    <input type="text" placeholder="Full Name" class="input-box" id="fullname">
+    <input type="email" placeholder="Email" class="input-box" id="email">
+    <div id="password-popbox" class="password-popbox" style="display:none;">
+      Password must be 8-24 characters.
+    </div>
+    <input type="password" placeholder="Password" class="input-box" id="password">
+    <div id="confirm-password-popbox" class="password-popbox" style="display:none;">
+      Passwords do not match.
+    </div>
+    <input type="password" placeholder="Confirm Password" class="input-box" id="confirm-password">
+    <div class="recaptcha">
+      <p>[ reCAPTCHA will appear here ]</p>
+    </div>
+
+    <div class="terms">
+      <input type="checkbox" id="terms">
+      <label>I agree to the <a href="terms-condition.html">Terms & Conditions</a></label>
+    </div>
+
+    <button class="primary-btn" id="create-account-btn">Create Account</button>
+
+    <p class="switch-auth">Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <!-- ✅ Hamburger Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -4,45 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms and Conditions - Falix Movies</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- Navigation -->
   <nav>
-    <a href="#"><img src="logo.png" alt="Logo" /></a>
+    <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a>
     <div>
-      <input type="text" placeholder="Search here...">
-    </div>
-    <div>
-      <button onclick="toggleMenu()">☰</button>
-      <div id="menu" style="display: none;">
-        <a href="#">Login</a> |
-        <a href="#">Signup</a>
-      </div>
+      <input type="text" placeholder="Search here..." class="search-box" />
+      <span class="menu-icon" onclick="toggleSidebar()">☰</span>
     </div>
   </nav>
 
-  <!-- Terms Content -->
-  <section>
-    <h1>Terms and Conditions</h1>
-    <p>Welcome to Falix Movies. By accessing or using our website, you agree to be bound by the following terms and conditions.</p>
+  <!-- Sidebar -->
+  <div class="sidebar-menu" id="sidebar">
+    <span class="close-icon" onclick="toggleSidebar()">✖</span>
+    <a href="index.html" class="menu-button">🏠 Home</a>
+    <a href="login.html" class="menu-button">👤 Login/Register</a>
+    <a href="watch-later.html" class="menu-button">⏰ Watch Later</a>
+  </div>
 
-    <h2>1. Use of Website</h2>
-    <p>You agree to use this website for lawful purposes only.</p>
+  <main class="main-grid">
+    <div class="content">
+      <h1 style="color:#4db2ff; margin-bottom:18px;">Terms and Conditions</h1>
+      <div class="movie-card" style="max-width:700px; margin:0 auto;">
+        <div class="movie-details">
+          <p style="margin-bottom:18px; font-size:1.1em; color:#d1d1d1;">
+            Welcome to <strong>Falix Movies</strong>. By accessing or using our website, you agree to be bound by the following terms and conditions.
+          </p>
+          <h2 style="color:#fff; margin-top:22px;">1. Use of Website</h2>
+          <ul style="color:#ccc; margin-bottom:16px; line-height:1.7;">
+            <li>You agree to use this website for lawful purposes only.</li>
+          </ul>
+          <h2 style="color:#fff; margin-top:22px;">2. Content Ownership</h2>
+          <ul style="color:#ccc; margin-bottom:16px; line-height:1.7;">
+            <li>All content, including movies, images, and descriptions, are for informational and entertainment purposes.</li>
+          </ul>
+          <h2 style="color:#fff; margin-top:22px;">3. Modifications</h2>
+          <ul style="color:#ccc; margin-bottom:16px; line-height:1.7;">
+            <li>We reserve the right to change or update these terms at any time.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <aside class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Comedy</a></li>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Thriller</a></li>
+        <li><a href="#">Sci-Fi</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">Documentary</a></li>
+      </ul>
+    </aside>
+  </main>
 
-    <h2>2. Content Ownership</h2>
-    <p>All content, including movies, images, and descriptions, are for informational and entertainment purposes.</p>
-
-    <h2>3. Modifications</h2>
-    <p>We reserve the right to change or update these terms at any time.</p>
-  </section>
+  <footer class="footer">
+    <div class="about">
+      <h2>About</h2>
+      <p>FalixMovies collects the highest quality movies and TV series for your entertainment. Join our Telegram for updates and support.</p>
+      <a href="#">Telegram Channel</a><br>
+      <a href="#">FalixMovies.top</a><br>
+      <a href="#">FalixMovies.cam</a>
+    </div>
+    <div class="tags">
+      <h2>Tags</h2>
+      <div class="tag-list">
+        <span class="tag">Terms</span>
+        <span class="tag">Conditions</span>
+        <span class="tag">Policy</span>
+        <span class="tag">Movies</span>
+      </div>
+    </div>
+  </footer>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.style.display = menu.style.display === "none" ? "block" : "none";
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
     }
   </script>
-
 </body>
 </html>
